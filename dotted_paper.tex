@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{mygray}{gray}{0.6}
+
+\setmainfont{SF-Pro-Text}[
+  Path=fonts/,
+  UprightFont=*-Regular,
+  BoldFont=*-Semibold,
+  ItalicFont=*-RegularItalic,
+  BoldItalicFont=*-SemiboldItalic]
+
+\setmonofont{SFMono}[
+  Path=fonts/,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-RegularItalic,
+  BoldItalicFont=*-BoldItalic,
+  Scale=0.9]
+
+\newfontfamily\headingfont{SF-Pro-Display}[
+  Path=fonts/,
+  UprightFont=*-Regular,
+  BoldFont=*-Semibold,
+  ItalicFont=*-RegularItalic,
+  BoldItalicFont=*-SemiboldItalic]
+
+\title{\vspace{-4cm}\hspace*{-15.5cm}\textcolor{mygray}{\large{Prototyping Papers}} \\ 
+                    \hspace*{-14.45cm}\huge{\textbf{Dotted paper.}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{tikzpicture}[overlay, remember picture]
+\node[anchor=north west,
+      xshift=17cm, 
+      yshift=-1.0cm] 
+     at (current page.north west) 
+     {\includegraphics[width=3cm]{image/shadowed_example_pfp.png}}; 
+\end{tikzpicture}
+
+\begin{tikzpicture}[overlay]
+    \foreach \x in {-8,...,30}
+    \foreach \y in {-44,...,2}
+    { \fill[gray!75] (0.5*\x,0.5*\y) circle (0.03cm); } 
+\end{tikzpicture}
+
+\setlength{\footskip}{100pt}
+
+\renewcommand{\thepage}{\scriptsize{Supporting open source. Visit \url{https://github.com/vertueux/prototyping-papers} for the copy and use of this paper.}}
+
+\end{document}

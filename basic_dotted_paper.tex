@@ -6,7 +6,30 @@
 \usepackage[dvipsnames]{xcolor}
 
 \definecolor{mygray}{gray}{0.6}
-\setmainfont{SFUIDisplay-Light.ttf}
+
+\setmainfont{SF-Pro-Text}[
+  Path=fonts/,
+  UprightFont=*-Regular,
+  BoldFont=*-Semibold,
+  ItalicFont=*-RegularItalic,
+  BoldItalicFont=*-SemiboldItalic]
+
+% Mono font
+\setmonofont{SFMono}[
+  Path=fonts/,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-RegularItalic,
+  BoldItalicFont=*-BoldItalic,
+  Scale=0.9]
+
+% Setting heading font for sections and subsections
+\newfontfamily\headingfont{SF-Pro-Display}[
+  Path=fonts/,
+  UprightFont=*-Regular,
+  BoldFont=*-Semibold,
+  ItalicFont=*-RegularItalic,
+  BoldItalicFont=*-SemiboldItalic]
 
 \date{}
 
@@ -14,11 +37,11 @@
 \maketitle
 
 \begin{tikzpicture}[overlay, remember picture]
-\node[anchor=north west,
-      xshift=16.5cm,
+\node[anchor=north west, 
+      xshift=16.5cm, 
       yshift=-28.4cm] 
      at (current page.north west) 
-     {\includegraphics[width=0.7cm]{shadowed_example_pfp.png}}; 
+     {\includegraphics[width=0.7cm]{image/shadowed_example_pfp.png}}; 
 \end{tikzpicture}
 
 \begin{tikzpicture}[overlay]
