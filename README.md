@@ -10,5 +10,13 @@ The simplicity of the programming done on these files makes them highly customiz
 
 To build the files yourself, you'll need a LaTeX edition with font support (notably XeLaTex). That's why I recommend using Overleaf to edit and compile programs from the web. All you have to do is clone the GitHub repository from the site.
 
+## Available papers
 
+These are the papers you can edit and directly use at the moment.
+
+| Paper    | Description |
+| -------- | ------- |
+| <img src="image/basic_dotted_paper.jpg" width="400px">  | Basic dotted paper is a simple paper, with no predefined text, no big GitHub profile picture taking up unnecessary space. It's designed to be simple and neutral.    |
+| <img src="image/blank_paper.png" width="400px">    | This is the most basic paper to use. Just a blank paper.    |
+| <img src="image/dotted_paper.jpg" width="400px"> | In the same style as blank paper, dotted paper is a simple paper with dots for ease of use and geometry.  |
 
